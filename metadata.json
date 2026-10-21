@@ -1,0 +1,6 @@
+{
+  "name": "Porsche 911 GT3 RS Refraction & Live Market Intelligence",
+  "description": "Interactive Porsche 911 GT3 RS Peach Refraction experience with real-time market trends, live auction telemetry, secondary valuation index, and aerodynamic engineering showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

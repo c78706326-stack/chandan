@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Porsche distinctive typography styling */
+.porsche-font {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.38em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.porsche-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+/* Radar pulse animation for the interactive hot-spot */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: radar-pulse 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+}
+
+.animate-radar-delayed {
+  animation: radar-pulse 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite 0.6s;
+}
+
+/* Glow effects */
+.peach-glow {
+  box-shadow: 0 0 40px -10px rgba(232, 165, 136, 0.45);
+}
+
+.crystal-glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.dark-crystal-glass {
+  background: rgba(18, 18, 20, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
